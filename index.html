@@ -1,8 +1,63 @@
-<html>
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"
-<title>Segurança Digital para Idosos</title>
-<link rel="stylesheet" href="style.css">
-</head>
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página sobre UX e acessibilidade, com foco em interfaces inclusivas e práticas de design acessível.">
+    <title>UX e acessibilidade: desenvolvendo interfaces inclusivas</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo</a>
+
+    <header class="hero">
+      <p class="eyebrow">Projeto web acessível</p>
+      <h1>UX e acessibilidade: desenvolvendo interfaces inclusivas</h1>
+      <p class="intro">
+        Boas experiências digitais consideram diferentes formas de perceber, compreender e interagir com o conteúdo.
+        Aqui, a prioridade é criar interfaces claras, previsíveis e úteis para todos os usuários.
+      </p>
+      <div class="actions">
+        <button id="theme-toggle" type="button" aria-pressed="false">Ativar alto contraste</button>
+        <a class="link-button" href="#principios">Ver princípios</a>
+      </div>
+    </header>
+
+    <main id="conteudo-principal">
+      <section id="principios" aria-labelledby="principios-title">
+        <h2 id="principios-title">Princípios centrais</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Clareza</h3>
+            <p>Textos simples, estruturas bem organizadas e linguagem direta ajudam a reduzir barreiras de compreensão.</p>
+          </article>
+          <article class="card">
+            <h3>Contraste</h3>
+            <p>Cores com bom contraste e elementos visuais consistentes favorecem a legibilidade e a identificação rápida.</p>
+          </article>
+          <article class="card">
+            <h3>Navegação</h3>
+            <p>Menus claros, foco visível e ordem lógica facilitam o uso por teclado e por leitores de tela.</p>
+          </article>
+        </div>
+      </section>
+
+      <section aria-labelledby="checklist-title">
+        <h2 id="checklist-title">Checklist rápido</h2>
+        <ul class="checklist">
+          <li>Use títulos claros e uma ordem de leitura lógica.</li>
+          <li>Garanta contraste suficiente entre texto e fundo.</li>
+          <li>Marque links, botões e campos com rótulos acessíveis.</li>
+          <li>Ofereça feedback claro para ações e erros.</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>Desenvolvido com atenção à inclusão, à legibilidade e à experiência de uso.</p>
+    </footer>
+
+    <div id="status" class="sr-only" aria-live="polite"></div>
+    <script src="script.js"></script>
+  </body>
 </html>
